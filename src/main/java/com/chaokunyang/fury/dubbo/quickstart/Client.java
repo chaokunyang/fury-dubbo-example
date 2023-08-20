@@ -4,6 +4,11 @@ import org.apache.dubbo.config.ApplicationConfig;
 import org.apache.dubbo.config.ReferenceConfig;
 import org.apache.dubbo.config.RegistryConfig;
 
+/**
+ * Test Client.
+ *
+ * @author chaokunyang
+ */
 public class Client {
   private static String zookeeperHost = System.getProperty("zookeeper.address", "127.0.0.1");
 

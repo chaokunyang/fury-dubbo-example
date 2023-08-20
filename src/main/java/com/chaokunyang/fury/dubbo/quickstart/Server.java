@@ -1,11 +1,15 @@
 package com.chaokunyang.fury.dubbo.quickstart;
 
+import java.util.concurrent.CountDownLatch;
 import org.apache.dubbo.config.ApplicationConfig;
 import org.apache.dubbo.config.RegistryConfig;
 import org.apache.dubbo.config.ServiceConfig;
 
-import java.util.concurrent.CountDownLatch;
-
+/**
+ * Test Server.
+ *
+ * @author chaokunyang
+ */
 public class Server {
   private static String zookeeperHost = System.getProperty("zookeeper.address", "127.0.0.1");
 
