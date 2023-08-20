@@ -1,4 +1,18 @@
 # fury-dubbo-example
+## Install dubbo fury integration
+```bash
+git clone https://github.com/fury-project/dubbo-serialization-fury.git
+mvn clean install
+```
+
+```xml
+<dependency>
+  <groupId>org.furyio</groupId>
+  <artifactId>dubbo-serialization-fury</artifactId>
+  <version>0.2.0-SNAPSHOT</version>
+</dependency>
+```
+
 ## Define Data
 See https://github.com/chaokunyang/fury-dubbo-example/blob/main/src/main/java/com/chaokunyang/fury/dubbo/data/Foo.java
 ```java
