@@ -8,6 +8,11 @@ import org.apache.dubbo.config.ServiceConfig;
 import org.apache.dubbo.config.bootstrap.DubboBootstrap;
 import org.apache.dubbo.rpc.Constants;
 
+/**
+ * Test Server.
+ *
+ * @author chaokunyang
+ */
 public class Server {
   public static void main(String[] args) throws Exception {
     ServiceConfig<HelloService> sc = new ServiceConfig<>();
@@ -17,13 +22,13 @@ public class Server {
     sc.setRef(new HelloServiceImpl());
     RegistryConfig rc = new RegistryConfig("zookeeper://127.0.0.1:2181");
     ProtocolConfig protocolConfig = new ProtocolConfig(CommonConstants.DUBBO, 10880);
-    protocolConfig.setSerialization("fastjson2");
+    protocolConfig.setSerialization("fury");
     DubboBootstrap.getInstance()
-      .application(new ApplicationConfig("provider-demo"))
-      .service(sc)
-      .registry(rc)
-      .protocol(protocolConfig)
-      .start()
-      .await();
+        .application(new ApplicationConfig("provider-demo"))
+        .service(sc)
+        .registry(rc)
+        .protocol(protocolConfig)
+        .start()
+        .await();
   }
 }
