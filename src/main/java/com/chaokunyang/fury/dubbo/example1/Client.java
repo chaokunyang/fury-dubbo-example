@@ -29,6 +29,6 @@ public class Client {
         .start(true);
 
     System.out.println("sayHi: " + referenceConfig.get().sayHi("venus"));
-    System.out.println("sayHi: " + referenceConfig.get().sayFoo(Foo.create()));
+    System.out.println("sayFoo: " + referenceConfig.get().sayFoo(Foo.create()));
   }
 }

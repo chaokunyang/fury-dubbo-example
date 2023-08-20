@@ -33,6 +33,6 @@ reference.setApplication(new ApplicationConfig("first-dubbo-consumer"));
 reference.setRegistry(new RegistryConfig("zookeeper://" + zookeeperHost + ":2181"));
 reference.setInterface(GreetingsService.class);
 GreetingsService service = reference.get();
-String message = service.sayHi("dubbo");
-System.out.println("sayHi: " + message);
+System.out.println("sayHi: " + service.sayHi("dubbo"));
+System.out.println("sayFoo: " + service.sayFoo(Foo.create()));
 ```
