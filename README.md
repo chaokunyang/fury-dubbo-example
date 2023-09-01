@@ -1,15 +1,10 @@
 # fury-dubbo-example
-## Install dubbo fury integration
-```bash
-git clone https://github.com/fury-project/dubbo-serialization-fury.git
-mvn clean install
-```
-
+## Install [dubbo fury integration](https://github.com/fury-project/dubbo-serialization-fury)
 ```xml
 <dependency>
   <groupId>org.furyio</groupId>
   <artifactId>dubbo-serialization-fury</artifactId>
-  <version>0.2.0-SNAPSHOT</version>
+  <version>0.1.1</version>
 </dependency>
 ```
 
