@@ -16,7 +16,7 @@ mvn clean install
 ## Define Data
 See https://github.com/chaokunyang/fury-dubbo-example/blob/main/src/main/java/com/chaokunyang/fury/dubbo/data/Foo.java
 ```java
-public class Foo {
+public class Foo implements Serializable {
   private int f1;
   private List<Integer> list;
   private Map<String, Integer> map;
