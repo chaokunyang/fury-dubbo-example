@@ -1,5 +1,6 @@
 package com.chaokunyang.fury.dubbo.data;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -11,7 +12,7 @@ import java.util.Objects;
  *
  * @author chaokunyang
  */
-public class Foo {
+public class Foo implements Serializable {
   private int f1;
   private List<Integer> list;
   private Map<String, Integer> map;
