@@ -4,7 +4,7 @@
 <dependency>
   <groupId>org.furyio</groupId>
   <artifactId>dubbo-serialization-fury</artifactId>
-  <version>0.1.1</version>
+  <version>0.1.2</version>
 </dependency>
 ```
 
